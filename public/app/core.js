@@ -4,19 +4,19 @@ $.ajaxSetup({
     },
 });
 
-$(document).on({
-    ajaxStart: () => {
-        $("#loadingScreen").css("display", "flex");
-    },
-    ajaxStop: () => {
-        $("#loadingScreen").css("display", "none");
-    },
-    ajaxError: (error) => {
-        $("#loadingScreen").css("display", "none");
-        Swal.fire({
-            title: "Error",
-            text: error,
-            icon: "error",
-        });
-    },
-});
+// $(document).on({
+//     ajaxStart: () => {
+//         $("#loadingScreen").css("display", "flex");
+//     },
+//     ajaxStop: () => {
+//         $("#loadingScreen").css("display", "none");
+//     },
+//     ajaxError: (error) => {
+//         $("#loadingScreen").css("display", "none");
+//         Swal.fire({
+//             title: "Error",
+//             text: error,
+//             icon: "error",
+//         });
+//     },
+// });
